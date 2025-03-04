@@ -6,7 +6,7 @@ const banner = document.createElement("a");
 	banner.setAttribute("href", promoLink);
 	banner.setAttribute("id", "special_offer_banner");
 	banner.style.display = "block";
-	banner.innerText = "See our bestsellers!";
+	banner.innerText = "See our best-sellers!";
 	banner.style.textAlign = "center";
 	banner.style.width = "100vw";
     banner.style.height = "auto";
