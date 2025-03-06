@@ -17,7 +17,7 @@ const banner = document.createElement("a");
 
 	banner.style.cursor = "pointer";
 
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", async function () {
 	if(document.URL == promoLink || document.URL == cartLink) {
 		return
 	} else {
