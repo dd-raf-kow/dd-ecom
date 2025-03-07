@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 			    creative: banner.id
 		        }
             });
-		await Iterable.track({ eventName: 'banner-promo_click' }).then().catch();
+		await Iterable.track({ "eventName": 'banner-promo_click' }).then().catch();
 		});
 	}
 });
