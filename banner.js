@@ -32,7 +32,9 @@ document.addEventListener("DOMContentLoaded", function () {
 		        }
 		});
 		await IterableInstance.setEmail(sessionStorage.getItem("email")).then().catch();
-		await Iterable.track({ "eventName": 'banner-promo_click' }).then().catch();
+		await Iterable.track({ "eventName": 'banner-promo_click' }).then((resp) => { 
+			console.log(resp);
+		}).catch();
 		});
 	}
 });
