@@ -17,7 +17,7 @@ const banner = document.createElement("a");
 
 	banner.style.cursor = "pointer";
 
-document.addEventListener("DOMContentLoaded", async function () {
+document.addEventListener("DOMContentLoaded", function () {
 	if(document.URL == promoLink || document.URL == cartLink) {
 		return
 	} else {
@@ -30,7 +30,8 @@ document.addEventListener("DOMContentLoaded", async function () {
 			    name: 'dd-bestsellers',
 			    creative: banner.id
 		        }
-            });
+		});
+		await IterableInstance.setEmail(sessionStorage.getItem("email")).then().catch();
 		await Iterable.track({ "eventName": 'banner-promo_click' }).then().catch();
 		});
 	}
