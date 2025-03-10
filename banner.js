@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
             } else {
                 console.warn("dataLayer is not defined");
             }
-            const resp = await Iterable.track({ eventName: "myCustomEvent" });
+            const resp = await Iterable.track({ eventName: "banner-promo_click" });
 			console.log("Track response:", JSON.stringify(resp, null, 2));
 
 		window.location.href = promoLink;
