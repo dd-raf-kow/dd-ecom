@@ -33,5 +33,5 @@ document.addEventListener("DOMContentLoaded", function () {
 			console.log("Track response:", JSON.stringify(resp, null, 2));
 
 		window.location.href = promoLink;
-    });
+    }, {"once": true});
 });
